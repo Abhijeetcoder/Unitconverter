@@ -1,0 +1,34 @@
+unit1 = input('Which term do you want it converted from: type one of the following 1 for velocity, 2 = density, 3 = specific_heat : ')
+num1 = input('Enter the value: ')
+if unit1 == "1":
+    unit2 = input('Which unit do you want to convert from type 1 = m/s or 2 = ft/s : ')
+    if unit2=="1" :
+        ans = float(num1)*3.281
+        print(ans,"ft/s")
+    elif unit2=="2" :
+        ans = float(num1)/3.281
+        print(ans,"m/s")
+    else :
+        print("invalid unit")
+elif unit1 == "2":
+    unit2 = input('Which unit do you want to convert from type 1=kg/m3 or 2=lb/ft3 : ')
+    if unit2=="1" :
+        ans = float(num1)*0.062428
+        print(ans,"lb/ft3")
+    elif unit2=="2" :
+        ans = float(num1)/0.062428
+        print(ans,"kg/m3")
+    else :
+        print("invalid unit")
+elif unit1 == "3":
+    unit2 = input('Which unit do you want to convert from type 1=j/kg.k or 2=btu/lb.f : ')
+    if unit2=="1" :
+        ans = float(num1)/4186.8
+        print(ans,"btu/lb.f")
+    elif unit2=="2" :
+        ans = float(num1)*4186.8
+        print(ans,"j/kg.k")
+    else :
+        print("invalid unit")
+else :
+    print("invalid term")
